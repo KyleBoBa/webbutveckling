@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+	<title>Portfolio Kyle BB</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="mall.css"/>
+	<link rel="preconnect" href="https://fonts.googleapis.com" href="https://fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Titillium+Web:wght@600&display=swap">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<div class="info">
+				<div class="heading">
+					<h1>Om Mig</h1>
+				</div>
+				<div class="pic">
+					<img src="bilder/dyrupt.png" alt="bild på logo" width="100px"/>
+				</div>
+			</div>
+			<div class="intro">
+				<p>Kyle</p>
+				<p>Boström</p>
+				<p>Balthazar</p>
+			</div>
+			<nav>
+				<div class="nav-links" id="navLinks">
+				  <i class="fa fa-times" onclick="hideMenu()"></i>
+					<ul>
+						<li><a href="index.html">Start</a></li>
+						<li><a class="active" href="#">Om‎‏‏‎‏‏‎ ‎Mig</a></li>		
+						<li><a href="kontakt.html">Kontakt</a></li>
+					</ul>
+				</div>
+				<i class="fa fa-bars" onclick="showMenu()"></i>				
+			</nav>
+		</div> 
+		<div class="second-sec">
+			<div class="timeline">
+				<div class="heading2">
+					<h1>Tidslinje</h1>
+				</div>
+				<div class="event">
+					<a class="btn" href="#första-content">Första Content</a>
+				</div>
+				<div class="event">
+					<a class="btn" href="#skol-arbete">Skol Arbete</a>
+				</div>
+			</div>
+			<div class="video">
+				<iframe src="https://www.youtube.com/embed/_elqI52ZAkk" title="Fuck off little bitches" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<iframe src="https://www.youtube.com/embed/eShWmg8WyaU" title="Helping a friend out with Hydra missions (Read description)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<iframe src="https://www.youtube.com/embed/UgvZQCdhnk8" title="Some clips #1 (Read description)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+<script>
+	var navLinks = document.getElementById("navLinks");
+	function showMenu(){
+		navLinks.style.right="0";
+	}
+	function hideMenu(){
+		navLinks.style.right="-50vw";
+	}
+</script>
+</body>
+</html>

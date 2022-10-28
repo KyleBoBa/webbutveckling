@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+	<title>Portfolio Kyle BB</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="mall.css"/>
+	<link rel="preconnect" href="https://fonts.googleapis.com" href="https://fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Titillium+Web:wght@600&display=swap">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<div class="info">
+				<div class="heading">
+					<h1>Startsida</h1>
+				</div>
+				<div class="pic">
+					<img src="bilder/dyrupt.png" alt="bild på logo" width="100px"/>
+				</div>
+			</div>
+			<div class="intro">
+				<p>Kyle</p>
+				<p>Boström</p>
+				<p>Balthazar</p>
+			</div>
+			<nav>
+				<div class="nav-links" id="navLinks">
+				  <i class="fa fa-times" onclick="hideMenu()"></i>
+					<ul>
+						<li><a class="active" href="#">Start</a></li>
+						<li><a href="ommig.html">Om‎‏‏‎‏‏‎ ‎Mig</a></li>		
+						<li><a href="kontakt.html">Kontakt</a></li>
+					</ul>
+				</div>
+				<i class="fa fa-bars" onclick="showMenu()"></i>
+			</nav>
+		</div> 
+		<div class="second-sec">
+			<div class="heading2">
+				<h1>Mitt Arbete</h1>
+			</div>
+			<div class="text-box">
+				<div class="text">
+					<p>Jag är en </p>
+				</div>
+			</div>
+			<div class="arbete">
+				<div class="hemsidor">
+					<button class="btn" onclick="window.open('http://google.com','_blank')">Uppstart</button>
+					<button class="btn" onclick="window.open('http://google.com','_blank')">Typografi</button>
+					<button class="btn" onclick="window.open('http://google.com','_blank')">Laptop UF</button>
+				</div>
+			</div>
+		</div>
+	</div>
+<script>
+	var navLinks = document.getElementById("navLinks");
+	function showMenu(){
+		navLinks.style.right="0";
+	}
+	function hideMenu(){
+		navLinks.style.right="-50vw";
+	}
+</script>
+</body>
+</html>

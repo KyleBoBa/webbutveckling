@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+	<title>Portfolio Kyle BB</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="mall.css"/>
+	<link rel="preconnect" href="https://fonts.googleapis.com" href="https://fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Titillium+Web:wght@600&display=swap">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<div class="info">
+				<div class="heading">
+					<h1>Kontakt</h1>
+				</div>
+				<div class="pic">
+					<img src="bilder/dyrupt.png" alt="bild på logo" width="100px"/>
+				</div>
+			</div>
+			<div class="intro">
+				<p>Kyle</p>
+				<p>Boström</p>
+				<p>Balthazar</p>
+			</div>
+			<nav>
+				<div class="nav-links" id="navLinks">
+				  <i class="fa fa-times" onclick="hideMenu()"></i>
+					<ul>
+						<li><a href="index.html">Start</a></li>
+						<li><a href="ommig.html">Om‎‏‏‎‏‏‎ ‎Mig</a></li>		
+						<li><a class="active" href="#">Kontakt</a></li>
+					</ul>
+				</div>
+				<i class="fa fa-bars" onclick="showMenu()"></i>		
+			</nav>
+		</div> 
+		<div class="second-sec">
+			<div class="heading2">
+				<h1>Kontakta Mig</h1>
+			</div>
+			<div class="kontakt">
+				<div class="kontakt-box">
+					<div class="kontakt-links">
+						DISCORD: <a href="https://discord.com/channels/DyrUpt#0986" target="_blank" class="link-white">DyrUpt#0986</a><br>
+						EMAIL: <a href="mailto:kylebb1@gmail" class="link-white">kylebb1@gmail</a><br>
+						TEL: <a href="tel:0793343716" class="link-white">079-334-3716</a><br>
+						_____________________________________________
+					</div>
+					<div class="kontakt-me">
+						<form>
+							<input type="text" name="Name" placeholder="Ditt Namn" required>
+							<input type="email" name="email" placeholder="Din Email" required>
+							<textarea name="anteckningar" rows="5" placeholder="Dina anteckningar"></textarea>
+							<button class="btn2" type="submit">Skicka</button>
+						</form>
+					</div>
+				</div>
+				<div class="map-outer">
+					<div class="map">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2079.5355285422975!2d16.165387016131703!3d58.58650997739823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46593bc955045bcd%3A0xb42ef6cea66d05d7!2sEbersteinska%20gymnasiet!5e0!3m2!1sen!2sus!4v1664999252979!5m2!1sen!2sus"
+						width="1290" height="600"></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<script>
+	var navLinks = document.getElementById("navLinks");
+	function showMenu(){
+		navLinks.style.right="0";
+	}
+	function hideMenu(){
+		navLinks.style.right="-50vw";
+	}
+</script>
+</body>
+</html>
